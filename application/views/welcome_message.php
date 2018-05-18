@@ -96,11 +96,11 @@
 												</div>
 
 												<div class="row form-group">
-													<div class="col-md-12">
+													<div class="col-md-12" style="text-align: center;color:white;">
 														<?php if(isset($_SESSION)) {
 														echo $this->session->flashdata('flash_data');
 														} ?>
-														<div class="clearfix"></div>
+														
 													</div>											
 												</div>
 											<?php echo form_close() ?>										
