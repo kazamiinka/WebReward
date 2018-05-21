@@ -100,7 +100,7 @@
 														<?php if(isset($_SESSION)) {
 														echo $this->session->flashdata('flash_data');
 														} ?>
-														
+														<div class="clearfix"></div>
 													</div>											
 												</div>
 											<?php echo form_close() ?>										

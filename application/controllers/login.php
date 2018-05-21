@@ -15,7 +15,8 @@ class Login extends CI_Controller {
 			if(!empty($result)){
 				$data=[
 					'id'=> $result->id,
-					'username' => $result->username
+					'username' => $result->username,
+					'level' => $result ->level
 				];
 
 				$this->session->set_userdata($data);
@@ -24,7 +25,6 @@ class Login extends CI_Controller {
 			else {
 				$this->session->set_flashdata('flash_data', 'Username or Password is wrong!');
 				redirect('login');
-				//tes
 			}
 		}
 		$this->load->view('welcome_message');

@@ -14,25 +14,11 @@ class Welcome extends CI_Controller {
 	}
 
 	public function index(){
-		$id = $this->session->userdata('id');
+		//dihide dulu utk testing
+		/* $id = $this->session->userdata('id');
 		$data['admin'] = $this->m_login->getDataById($id);
 		$data ['reward'] = $this->m_reward->getPelanggan();
-		$this->load->view('component');
-	}
-
-	public function auth() {
-		if(isset($_POST['submit'])) {
-			$user = $this->input->post('username',true);
-			$pass = $this->input->post('password',true);
-			$auth = $this->app_model->proseslogin($user,$pass);
-			$hasil = count($auth);
-			if ($hasil>0) {
-				$alogin=$this->db->get_where('admin', array('user' => $user, 'pass' => $pass))->row();
-			}
-			else {
-				redirect('Welcome/login');
-			}
-		}
+		$this->load->view('component'); */
 	}
 
 	public function logout(){
